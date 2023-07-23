@@ -1,0 +1,23 @@
+.HeaderContainer{
+    position: relative;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.HeaderDiv1,.HeaderDiv2,.HeaderDiv3{
+    height:20vh;
+    width: 20vw;
+}
+
+.HeaderDiv1{
+    background-color: aquamarine;
+}
+
+.HeaderDiv2{
+    background-color: gold;
+}
+
+.HeaderDiv3{
+    background-color: black;
+}
