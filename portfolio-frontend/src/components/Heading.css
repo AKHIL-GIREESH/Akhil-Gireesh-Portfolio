@@ -1,9 +1,12 @@
 .HeaderContainer{
-    position: relative;
+    font-size: 4rem;
     display: flex;
     justify-content: center ;
     align-items: center;
     width:100vw;
+    height:100vh;
+    background-image: url("../Scorpio.png");
+    background-size: cover;
 }
 
 .HeaderDiv1,.HeaderDiv2,.HeaderDiv3{
