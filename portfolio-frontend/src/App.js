@@ -4,12 +4,14 @@ import Heading from './components/Heading';
 import About from './components/About';
 import Projects from './components/projects';
 import Contact from './components/Contact';
+import Experience from './components/Experience';
 
 function App() {
   return (
     <div className="App">
       <Heading/>
       <About/>
+      <Experience/>
       <Projects/>
       <Contact/>
     </div>
