@@ -15,10 +15,10 @@ c.lineTo(100,100)
 c.strokeStyle = "#fff"
 c.stroke()
 
-c.moveTo(150,150)
-c.lineTo(200,200)
-c.strokeStyle = "#fff"
-c.stroke()
+// c.moveTo(150,150)
+// c.lineTo(200,200)
+// c.strokeStyle = "#fff"
+// c.stroke()
 
 c.beginPath()
 c.moveTo(150,50)
