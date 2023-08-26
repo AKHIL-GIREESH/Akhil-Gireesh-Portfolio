@@ -15,10 +15,25 @@ c.lineTo(100,100)
 c.strokeStyle = "#fff"
 c.stroke()
 
-// c.moveTo(150,150)
-// c.lineTo(200,200)
-// c.strokeStyle = "#fff"
-// c.stroke()
+c.moveTo(100,100)
+c.lineTo(200,100)
+c.stroke()
+
+c.moveTo(100,100)
+c.lineTo(100,200)
+c.stroke()
+
+c.moveTo(50,150)
+c.lineTo(150,150)
+c.stroke()
+
+c.moveTo(150,50)
+c.lineTo(150,150)
+c.stroke()
+
+c.moveTo(150,150)
+c.lineTo(200,200)
+c.stroke()
 
 c.beginPath()
 c.moveTo(150,50)
