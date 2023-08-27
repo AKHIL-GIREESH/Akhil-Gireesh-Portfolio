@@ -48,20 +48,17 @@ const c = canvas.getContext("2d")
 // c.stroke()
 
 let x = 200
-let flag = false
+let speed = 14
 function animate(){
     c.clearRect(0,0,innerWidth,innerHeight)
     requestAnimationFrame(animate)
     c.beginPath()
     c.arc(x,200,50,0,360,false);
     c.stroke();
-    if(x+50>=innerWidth){
-        flag = true
+    if(x+50>=innerWidth || x-50<=0){
+        speed *=-1
     }
-    if(x-50<=0){
-        flag = false
-    }
-    flag?x-=1:x+=1
+    x+=speed
 }
 
 //animate()
