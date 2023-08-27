@@ -47,18 +47,24 @@ const c = canvas.getContext("2d")
 // //c.strokeStyle = "#000"
 // c.stroke()
 
-let x = 200
-let speed = 14
+let x = innerWidth*Math.random()
+let y = innerHeight*Math.random()
+let xspeed = (Math.random()-0.5)*10
+let yspeed = (Math.random()-0.5)*10
 function animate(){
     c.clearRect(0,0,innerWidth,innerHeight)
     requestAnimationFrame(animate)
     c.beginPath()
-    c.arc(x,200,50,0,360,false);
+    c.arc(x,y,50,0,360,false);
     c.stroke();
     if(x+50>=innerWidth || x-50<=0){
-        speed *=-1
+        xspeed =-(Math.random()-0.5)*10
     }
-    x+=speed
+    if(y+50>=innerHeight || y-50<=0){
+        yspeed = -(Math.random()-0.5)*10
+    }
+    x+=xspeed
+    y+=yspeed
 }
 
 //animate()
