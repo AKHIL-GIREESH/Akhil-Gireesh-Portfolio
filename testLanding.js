@@ -31,6 +31,12 @@ for(let i=0;i<100;i++){
 }
 
 c.beginPath()
-
+c.strokeStyle = "#fff"
 c.moveTo(0.6*innerWidth,0.2*innerHeight)
-//c.lineTo()
+c.lineTo(0.62*innerWidth,0.26*innerHeight)
+c.lineTo(0.625*innerWidth,0.32*innerHeight)
+c.moveTo(0.62*innerWidth,0.26*innerHeight)
+c.lineTo(0.56*innerWidth,0.32*innerHeight)
+c.lineTo(0.535*innerWidth,0.33*innerHeight)
+c.lineTo(0.52*innerWidth,0.37*innerHeight)
+c.stroke()
