@@ -46,32 +46,57 @@ const c = canvas.getContext("2d")
 // c.lineTo(100,200)
 // //c.strokeStyle = "#000"
 // c.stroke()
+let maxRadius = 50, minRadius = 12
+
+let mouse = {
+    x:undefined,
+    y:undefined
+}
+
+window.addEventListener("mousemove",(event) => {
+    mouse.x = event.x
+    mouse.y = event.y
+    //console.log(mouse)
+})
 
 class AnimatedCircles{
     constructor(){
-        this.x = (innerWidth-100)*Math.random()+50
-        this.y = (innerHeight-100)*Math.random()+50
-        this.xspeed = (Math.random()-0.5)*10
-        this.yspeed = (Math.random()-0.5)*10
+        this.x = (innerWidth-2*minRadius)*Math.random()+minRadius
+        this.y = (innerHeight-2*minRadius)*Math.random()+minRadius
+        this.xspeed = (Math.random()-0.5)*5
+        this.yspeed = (Math.random()-0.5)*5
+        this.colour = `rgba(${Math.random()*255},${Math.random()*255},${Math.random()*255},1)`
+        this.radius = minRadius
     }
     
     Animate(){
         c.beginPath()
-        //c.fillStyle = `rgba(${Math.random()*255},${Math.random()*255},${Math.random()*255},1)`
-        c.arc(this.x,this.y,50,0,360,false);
+        c.fillStyle = this.colour
+        c.arc(this.x,this.y,this.radius,0,360,false);
         c.stroke();
-        if(this.x+50>innerWidth || this.x-50<0){
-            c.fillStyle = `rgba(${Math.random()*255},${Math.random()*255},${Math.random()*255},1)`
+        c.fill()
+        //c.closePath()
+        if(this.x+minRadius>innerWidth || this.x-minRadius<0){
             this.xspeed =-(this.xspeed)
-            c.fill()
+            this.colour = `rgba(${Math.random()*255},${Math.random()*255},${Math.random()*255},1)`
         }
-        if(this.y+50>innerHeight || this.y-50<0){
-            c.fillStyle = `rgba(${Math.random()*255},${Math.random()*255},${Math.random()*255},1)`
+        if(this.y+minRadius>innerHeight || this.y-minRadius<0){
             this.yspeed = -(this.yspeed)
-            c.fill()
+            this.colour = `rgba(${Math.random()*255},${Math.random()*255},${Math.random()*255},1)`
         }
+
         this.x+=this.xspeed
         this.y+=this.yspeed
+
+        console.log(mouse)
+        if(mouse.x - this.x < 50 && mouse.x-this.x > -50 && this.radius < maxRadius){
+            console.log("hi")
+            this.radius+=1
+        }else if(this.radius>minRadius){
+            this.radius-=1
+            console.log("Hii")
+        }
+        //this.colour = //`rgba(${Math.random()*255},${Math.random()*255},${Math.random()*255},1)`
     }
 }
 
@@ -81,7 +106,7 @@ let circleArray = []
 // let xspeed = (Math.random()-0.5)*10
 // let yspeed = (Math.random()-0.5)*10
 
-for(let i =0;i<40;i++){
+for(let i =0;i<60;i++){
     circleArray.push(new AnimatedCircles())
 }
 
@@ -91,9 +116,8 @@ for(let i =0;i<40;i++){
 function animate(){
     c.clearRect(0,0,innerWidth,innerHeight)
     requestAnimationFrame(animate)
-    for(let i=0;i<40;i++){
+    for(let i=0;i<60;i++){
         circleArray[i].Animate()
-        console.log(circleArray[i])
     }
     //circleInstance.Animate()
     // c.beginPath()
