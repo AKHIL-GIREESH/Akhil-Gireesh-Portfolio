@@ -46,7 +46,7 @@ const c = canvas.getContext("2d")
 // c.lineTo(100,200)
 // //c.strokeStyle = "#000"
 // c.stroke()
-let maxRadius = 50, minRadius = 12
+let maxRadius = 100, minRadius = 5
 
 let mouse = {
     x:undefined,
@@ -63,8 +63,8 @@ class AnimatedCircles{
     constructor(){
         this.x = (innerWidth-2*minRadius)*Math.random()+minRadius
         this.y = (innerHeight-2*minRadius)*Math.random()+minRadius
-        this.xspeed = (Math.random()-0.5)*5
-        this.yspeed = (Math.random()-0.5)*5
+        this.xspeed = (Math.random()-0.5)
+        this.yspeed = (Math.random()-0.5)
         this.colour = `rgba(${Math.random()*255},${Math.random()*255},${Math.random()*255},1)`
         this.radius = minRadius
     }
@@ -89,12 +89,10 @@ class AnimatedCircles{
         this.y+=this.yspeed
 
         console.log(mouse)
-        if(mouse.x - this.x < 50 && mouse.x-this.x > -50 && this.radius < maxRadius){
-            console.log("hi")
+        if(mouse.x - this.x < 50 && mouse.x-this.x > -50 && this.radius < maxRadius && mouse.y - this.y < 50 && mouse.y-this.y > -50){
             this.radius+=1
         }else if(this.radius>minRadius){
             this.radius-=1
-            console.log("Hii")
         }
         //this.colour = //`rgba(${Math.random()*255},${Math.random()*255},${Math.random()*255},1)`
     }
@@ -106,7 +104,7 @@ let circleArray = []
 // let xspeed = (Math.random()-0.5)*10
 // let yspeed = (Math.random()-0.5)*10
 
-for(let i =0;i<60;i++){
+for(let i =0;i<200;i++){
     circleArray.push(new AnimatedCircles())
 }
 
@@ -116,7 +114,7 @@ for(let i =0;i<60;i++){
 function animate(){
     c.clearRect(0,0,innerWidth,innerHeight)
     requestAnimationFrame(animate)
-    for(let i=0;i<60;i++){
+    for(let i=0;i<200;i++){
         circleArray[i].Animate()
     }
     //circleInstance.Animate()
@@ -133,4 +131,4 @@ function animate(){
     // y+=yspeed
 }
 
-animate()
+//animate()
