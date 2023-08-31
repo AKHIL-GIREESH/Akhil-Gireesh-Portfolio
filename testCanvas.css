@@ -1,0 +1,50 @@
+.ipCursor{
+    height:30px;
+    width:30px;
+    background-color: #fff;
+    opacity: 0.3;
+}
+
+.glCursor{
+    height: 50px;
+    width:50px;
+    border: 1px solid white;
+}
+
+.ipCursor,.glCursor{
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+
+canvas{
+    border: 1px solid;
+    position: relative;
+}
+
+.landingDiv{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    position: absolute;
+    z-index: 1;
+   color: #fff; /*rgb(235, 89, 57);  */
+    font-size: 6rem;
+    font-weight: 900;
+}
+body{
+    margin:0px;
+    width:100vw;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
