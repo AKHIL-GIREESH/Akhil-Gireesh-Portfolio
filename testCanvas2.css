@@ -1,0 +1,11 @@
+.cardContainer{
+    width:20vw;
+    height: 40vh;
+    position: relative;
+}
+
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
