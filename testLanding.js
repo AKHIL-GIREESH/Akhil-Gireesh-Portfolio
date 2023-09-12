@@ -34,6 +34,7 @@
             this.x = Math.random() * window.innerWidth
             this.y = Math.random() * window.innerHeight
             this.colour = `rgba(255,255,255,${Math.random()})`
+            this.speed = 0.1
         }
 
         draw(){

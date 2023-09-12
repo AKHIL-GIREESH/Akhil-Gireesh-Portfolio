@@ -37,7 +37,7 @@ canvas{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    
 }
 
 h1{
@@ -66,25 +66,26 @@ body{
     border: 1px solid blueviolet;
     bottom:0;
     color: white;
+    position: sticky;
   }
   
   #Two{
     background-color:red;
-    position: sticky;
+    /* position: sticky; */
     z-index: -2;
   }
   #Three{
-    position: sticky;
+    /* position: sticky; */
     z-index: -3;
     background-color: black;
   }
   #Four{
-    position: sticky;
+    /* position: sticky; */
     z-index: -4;
     background-color:red;
   }
   #Five{
-    position: sticky;
+    /* position: sticky; */
     z-index: -5;
     background-color: black;
   }
