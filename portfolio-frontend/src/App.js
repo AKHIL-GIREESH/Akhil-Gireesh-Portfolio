@@ -8,7 +8,7 @@ import Experience from './components/Experience';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Heading/>
       <About/>
       <Experience/>
