@@ -36,11 +36,8 @@
     transform: rotate(360deg);
   }
 } */
-
-.App{
-  /* background-image: url("./MacBookPro16_ Mockup.png"); */
-  height: 100vh;
-  width:95vw;
+.outDiv{
+  position: absolute;
 }
 
 .Container{
@@ -48,21 +45,32 @@
   height:100vh;
   border: 1px solid blueviolet;
   bottom:0;
-  position: sticky;
+  color: white;
 }
 
 #One{
+  position: sticky;
   z-index: -1;
+  background-color: black;
 }
+
 #Two{
+  background-color:red;
+  position: sticky;
   z-index: -2;
 }
 #Three{
+  position: sticky;
   z-index: -3;
+  background-color: black;
 }
 #Four{
+  position: sticky;
   z-index: -4;
+  background-color:red;
 }
 #Five{
+  position: sticky;
   z-index: -5;
+  background-color: black;
 }

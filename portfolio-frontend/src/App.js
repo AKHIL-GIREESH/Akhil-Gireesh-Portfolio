@@ -8,7 +8,7 @@ import Experience from './components/Experience';
 
 function App() {
   return (
-    <div>
+    <div className='outerDiv'>
       <Heading/>
       <About/>
       <Experience/>
