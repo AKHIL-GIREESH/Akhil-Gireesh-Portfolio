@@ -33,11 +33,11 @@ canvas{
     position: relative;
 }
 
-.landingDiv{
-    border: 1px solid red;
+#One{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
 
 h1{
@@ -49,7 +49,7 @@ h1{
     /* rgb(235, 89, 57); */
 }
 body{
-    margin:0px;
+    margin:0;
     height: 100vh;
     width:100vw;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -59,3 +59,32 @@ body{
     -moz-osx-font-smoothing: grayscale;
     cursor: none;
 }
+
+.Container{
+    width:100vw;
+    height:100vh;
+    border: 1px solid blueviolet;
+    bottom:0;
+    color: white;
+  }
+  
+  #Two{
+    background-color:red;
+    position: sticky;
+    z-index: -2;
+  }
+  #Three{
+    position: sticky;
+    z-index: -3;
+    background-color: black;
+  }
+  #Four{
+    position: sticky;
+    z-index: -4;
+    background-color:red;
+  }
+  #Five{
+    position: sticky;
+    z-index: -5;
+    background-color: black;
+  }

@@ -2,13 +2,11 @@ import "./Heading.css";
 
 const Heading = () => {
     return(
-        <canvas className="Container" id="One">
-            {/* <div className="HeaderDiv1">Div1</div>
-            <div className="HeaderDiv2">Div2</div>
-            <div className="HeaderDiv3">Div3</div> */}
+        <div className="Container" id="One">
             <p>Hi, I'm</p>
-            <h1>My Name</h1>
-        </canvas>
+            <h1>AKHIL GIREESH</h1>
+            <canvas></canvas>
+        </div>
     )
 }
 
