@@ -74,6 +74,9 @@ body{
     background-color:red;
     /* position: sticky; */
     z-index: -2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   #Three{
     /* position: sticky; */
@@ -90,3 +93,15 @@ body{
     z-index: -5;
     background-color: black;
   }
+
+.curve{
+    height:79px;
+    border:1px solid rgb(255, 255, 255);
+    border-radius: 0 0 50% 50%;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+  100% {border-radius: 0 0 0 0};
+}
