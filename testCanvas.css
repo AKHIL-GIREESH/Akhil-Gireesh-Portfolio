@@ -58,6 +58,7 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     cursor: none;
+    scroll-behavior: smooth;
 }
 
 .Container{
