@@ -1,3 +1,11 @@
+const curve = new IntersectionObserver(elemes => console.log("It is",elemes) )
+
+
+
+
+
+
+
 const canvas = document.querySelector("canvas")
 
 canvas.width = window.innerWidth
@@ -88,7 +96,7 @@ class AnimatedCircles{
         this.x+=this.xspeed
         this.y+=this.yspeed
 
-        console.log(mouse)
+        //console.log(mouse)
         if(mouse.x - this.x < 50 && mouse.x-this.x > -50 && this.radius < maxRadius && mouse.y - this.y < 50 && mouse.y-this.y > -50){
             this.radius+=1
         }else if(this.radius>minRadius){
