@@ -1,11 +1,3 @@
-const curve = new IntersectionObserver(elemes => console.log("It is",elemes) )
-
-
-
-
-
-
-
 const canvas = document.querySelector("canvas")
 
 canvas.width = window.innerWidth

@@ -3,9 +3,12 @@
 
     const canvas = document.querySelector("canvas")
     const ipadCursor = document.querySelector(".ipCursor")
-    const glCursor = document.querySelector(".glCursor") 
+    const glCursor = document.querySelector(".glCursor")
+    const Container = document.querySelectorAll(".Container")
 
-    console.log(ipadCursor)
+    const curve = new IntersectionObserver(entries => entries.forEach(entry => console.log(entry)))
+    curve.observe(Container[0])
+    curve.observe(Container[1])
 
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
@@ -14,7 +17,7 @@
     window.addEventListener("mousemove",(e) => {
         ipadCursor.style.top = `${e.clientY}px`
         ipadCursor.style.left = `${e.clientX}px`
-        console.log(glCursor)
+        //console.log(glCursor)
         glCursor.animate({
             top : `${e.clientY}px`,
             left : `${e.clientX}px`
