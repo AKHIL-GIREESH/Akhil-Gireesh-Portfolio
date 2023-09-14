@@ -1,14 +1,18 @@
 //console.log("Hello World")
 
-
     const canvas = document.querySelector("canvas")
     const ipadCursor = document.querySelector(".ipCursor")
     const glCursor = document.querySelector(".glCursor")
-    const Container = document.querySelectorAll(".Container")
+    // const Container = document.querySelectorAll(".Container")
+    // const curveDiv = document.querySelector(".curve")
 
-    const curve = new IntersectionObserver(entries => entries.forEach(entry => console.log(entry)))
-    curve.observe(Container[0])
-    curve.observe(Container[1])
+    // const curve = new IntersectionObserver(entries => entries.forEach(entry => {
+    //     if(entry.intersectionRatio < 0.5 && entry.intersectionRatio){ //Modify after && part
+    //         curveDiv.style.height = `${97*2*(entry.intersectionRatio)}px`
+    //     }}),
+    //     {threshold:0.5})
+    
+    // Container.forEach(item => curve.observe(item))
 
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
