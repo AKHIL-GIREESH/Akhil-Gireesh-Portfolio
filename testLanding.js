@@ -3,6 +3,21 @@
     const canvas = document.querySelector("canvas")
     const ipadCursor = document.querySelector(".ipCursor")
     const glCursor = document.querySelector(".glCursor")
+
+
+    class scramble{
+        constructor(text){
+            console("Works")
+            this.text = text
+            this.array = ["*","^","%","_","@","!","#","$"]
+        }
+        encoder(){
+            this.text = this.text.replace(this.text[Math.random()],this.array[Math.random()])
+        }
+        decoder(){
+
+        }
+    }
     // const Container = document.querySelectorAll(".Container")
     // const curveDiv = document.querySelector(".curve")
 
