@@ -29,6 +29,77 @@
     
     // Container.forEach(item => curve.observe(item))
 
+    /////////////////////////////////////////////////////////
+    // const observer = new IntersectionObserver()
+    // for(let i=0;i<5;i++){
+
+    // }
+
+
+    let tlHome = gsap.timeline()
+    tlHome.from("#One h1",{
+        y:-100,
+        opacity:0,
+        duration:2,
+        scrollTrigger:"#One h1"
+    })
+
+    let tlAbout = gsap.timeline()
+    gsap.from("#Two h1",{
+        y:-100,
+        opacity:0,
+        // delay:2,
+        duration:2,
+        scrollTrigger:{
+            trigger:"#Two",
+            start:"top center",
+            toggleActions:"restart pause restart none"
+        }
+    })
+
+    let tlExperience = gsap.timeline()
+    gsap.from("#Three h1",{
+        y:-100,
+        // delay:2,
+        opacity:0,
+        duration:2,
+        scrollTrigger:{
+            trigger:"#Three",
+            start:"top center",
+            toggleActions:"restart pause restart none"
+        }
+    })
+
+    let tlAwards = gsap.timeline()
+    gsap.from("#Four h1,#Four p",{
+        y:-100,
+        // delay:2,
+        opacity:0,
+        duration:2,
+        scrollTrigger:{
+            trigger:"#Four",
+            start:"top center",
+            toggleActions:"restart pause restart none"
+        }
+    })
+
+    let tlTestimonials = gsap.timeline()
+    gsap.from("#Five h1",{
+        y:-100,
+        // delay:2,
+        opacity:0,
+        duration:2,
+        scrollTrigger:{
+            trigger:"#Five",
+            start:"top center",
+            toggleActions:"restart none restart none"
+        }
+    })
+
+
+    /////////////////////////////////////////////////////////
+
+
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
     canvas.style.backgroundColor = "black"
