@@ -208,7 +208,7 @@ document.addEventListener("dblclick", ()=>{
         draw(){
             c.beginPath()
             c.fillStyle = this.colour
-            c.arc(this.x,this.y,1.5,0,360,false)
+            c.arc(this.x,this.y,2,0,360,false)
             c.stroke()
             c.fill()
         }
