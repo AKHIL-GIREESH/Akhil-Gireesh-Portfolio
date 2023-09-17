@@ -35,40 +35,6 @@ document.addEventListener("dblclick", ()=>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //////////////////////////////////////////////////////////////
 
     const canvas = document.querySelector("canvas")
