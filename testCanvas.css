@@ -28,17 +28,31 @@
     z-index: 3;
 }
 
+.nav{
+    position: sticky;
+    top:0;
+    width: 100%;
+    padding:0vh;
+    z-index: 1;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 canvas{
+    top:0;
+    left:0;
     border: 1px solid;
     position: relative;
 }
 
 #One{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 h1{
