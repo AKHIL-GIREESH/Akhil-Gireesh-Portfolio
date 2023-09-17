@@ -41,13 +41,20 @@ canvas{
 }
 
 h1{
+   color: rgb(0, 173, 181);
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+#One h1{
     position: absolute;
     z-index: 1;
-   color: #fff;   
+   color: #EADEDE;
     font-size: 6rem;
     font-weight: 900;
     /* rgb(235, 89, 57); */
 }
+
 body{
     margin:0;
     height: 100vh;
@@ -71,7 +78,7 @@ body{
   }
   
   #Two{
-    background-color:red;
+    background-color:#222831;
     /* position: sticky; */
     /* z-index: -2; */
     /* display: flex;

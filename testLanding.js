@@ -37,11 +37,15 @@
 
 
     let tlHome = gsap.timeline()
-    tlHome.from("#One h1",{
+    gsap.from("#One h1",{
         y:-100,
         opacity:0,
-        duration:2,
-        scrollTrigger:"#One h1"
+        duration:3,
+        scrollTrigger:{
+            trigger:"#One h1",
+            start:"top center",
+            toggleActions:"restart pause restart none"
+        }
     })
 
     let tlAbout = gsap.timeline()
@@ -51,7 +55,7 @@
         // delay:2,
         duration:2,
         scrollTrigger:{
-            trigger:"#Two",
+            trigger:"#Two h1",
             start:"top center",
             toggleActions:"restart pause restart none"
         }
@@ -62,9 +66,9 @@
         y:-100,
         // delay:2,
         opacity:0,
-        duration:2,
+        duration:3,
         scrollTrigger:{
-            trigger:"#Three",
+            trigger:"#Three h1",
             start:"top center",
             toggleActions:"restart pause restart none"
         }
@@ -75,9 +79,9 @@
         y:-100,
         // delay:2,
         opacity:0,
-        duration:2,
+        duration:3,
         scrollTrigger:{
-            trigger:"#Four",
+            trigger:"#Four h1",
             start:"top center",
             toggleActions:"restart pause restart none"
         }
@@ -88,9 +92,9 @@
         y:-100,
         // delay:2,
         opacity:0,
-        duration:2,
+        duration:3,
         scrollTrigger:{
-            trigger:"#Five",
+            trigger:"#Five h1",
             start:"top center",
             toggleActions:"restart none restart none"
         }
@@ -102,7 +106,7 @@
 
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
-    canvas.style.backgroundColor = "black"
+    canvas.style.backgroundColor = "#090909"
 
     window.addEventListener("mousemove",(e) => {
         ipadCursor.style.top = `${e.clientY}px`
