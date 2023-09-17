@@ -1,16 +1,16 @@
 .ipCursor{
     height:25px;
     width:25px;
-    background-color: #fff;
-    opacity: 0.3;
-    box-shadow:0px 0px 5px black;
+    background-color: #FC4346;
+    opacity: 1;
+    box-shadow:0px 0px 5px #FC4346;
 }
 
 .glCursor{
     height: 70px;
     width:70px;
     background-color:rgba(256,256,256, 0.2);
-    backdrop-filter:blur(10px);
+    backdrop-filter:blur(5px);
     box-shadow:0px 0px 5px black;
 }
 
@@ -56,12 +56,6 @@ h1{
     /* rgb(235, 89, 57); */
 }
 
-#Two h1{
-    font-size: 4rem;
-    font-weight:800;
-    /* rgb(235, 89, 57); */
-}
-
 body{
     margin:0;
     height: 100vh;
@@ -86,13 +80,26 @@ body{
   
   #Two{
     background-color:#EEEEEE;
-    color: #FC4346;
+    color: #556271;
+    font-size: 1.2em;
     /* position: sticky; */
     /* z-index: -2; */
     /* display: flex;
     flex-direction: column;
     justify-content: space-between; */
   }
+
+  #Two h1{
+    font-size: 4rem;
+    font-weight:800;
+    color: #FC4346;
+  }
+
+  #Two span{
+    color: #FC4346;
+    font-weight: 800;
+  }
+
   #Three{
     /* position: sticky; */
     /* z-index: -3; */
