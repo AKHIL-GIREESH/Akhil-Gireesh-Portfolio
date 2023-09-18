@@ -40,10 +40,23 @@
     backdrop-filter:blur(15px);
     box-shadow:0px 0px 15px black;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items:center;
     color: #FC4346;
 }
+
+.nav div{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav div p{
+    margin: 1vw;
+}
+
 
 canvas{
     top:0;
