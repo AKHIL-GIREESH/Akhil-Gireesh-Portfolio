@@ -33,3 +33,16 @@
 .card:hover{
     transform: rotateY(180deg);
 }
+
+.timeline{
+    display: flex;
+    border: 1px solid black;
+    width:100vw;
+    height: 120vh;
+}
+
+.timeline-left,.timeline-right{
+    height:100%;
+    width:50%;
+    border: 1px solid orangered;
+}
