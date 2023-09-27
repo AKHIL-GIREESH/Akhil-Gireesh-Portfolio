@@ -11,7 +11,9 @@
     height: 100%;
     transform-style: preserve-3d;
     transition: all 1s ease;
-    border: 1px solid;   
+    border: 1px solid;
+    background:#434386;
+    color: white;
 }
 
 .cardFront{
