@@ -36,7 +36,7 @@
 
 .timeline{
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width:100vw;
     height: 200vh;
 }
@@ -44,13 +44,24 @@
 .timeline-left,.timeline-right{
     height:100%;
     width:50%;
-    border: 1px solid orangered;
+    /* border: 1px solid orangered; */
 }
 
+.timeline-left{
+    border-right:1px solid orangered ;
+}
+
+.timeline-right{
+    border-left:1px solid orangered ;
+}
 .timeline-left .cardContainer{
     margin-bottom: 40vh;
+    margin-left:35%;
+    width:30vw;
 }
 
 .timeline-right .cardContainer{
     margin-top: 40vh;
+    margin-left: 5%;
+    width:30vw;
 }
