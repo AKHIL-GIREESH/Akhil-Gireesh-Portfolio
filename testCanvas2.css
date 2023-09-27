@@ -38,11 +38,19 @@
     display: flex;
     border: 1px solid black;
     width:100vw;
-    height: 120vh;
+    height: 200vh;
 }
 
 .timeline-left,.timeline-right{
     height:100%;
     width:50%;
     border: 1px solid orangered;
+}
+
+.timeline-left .cardContainer{
+    margin-bottom: 40vh;
+}
+
+.timeline-right .cardContainer{
+    margin-top: 40vh;
 }
