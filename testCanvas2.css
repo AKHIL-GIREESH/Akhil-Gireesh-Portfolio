@@ -81,17 +81,28 @@ body h1{
     margin-left: 49vw;
     border: 1px solid pink;
     height: 370vh;
-    width:3%;
+    width:2vw;
     /* justify-content: space-evenly; */
 }
 
 .tlCircle{
-    height: 0px;
-    width: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding:1vw;
     background-color: #434386;
-    margin:0;
-    /* position: absolute; */
-    margin-bottom: 40vh;
+    /* margin-bottom: 40vh; */
+    
+}
+
+.tlCircle2, .tlCircle{
+    height: 0px;
+    width: 0px;
     border-radius: 50%;
+}
+
+.tlCircle2{
+    padding:0.8vh;
+    background-color: white;
+    /* margin-bottom: 40vh; */
 }
