@@ -73,3 +73,25 @@ body h1{
     text-align: center;
     margin-bottom: 10vh ;
 }
+
+.tlCircleContainer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 49vw;
+    border: 1px solid pink;
+    height: 370vh;
+    width:3%;
+    /* justify-content: space-evenly; */
+}
+
+.tlCircle{
+    height: 0px;
+    width: 0px;
+    padding:1vw;
+    background-color: #434386;
+    margin:0;
+    /* position: absolute; */
+    margin-bottom: 40vh;
+    border-radius: 50%;
+}
